@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <a class="back-link" href="./index.html">Go back</a>
-      <h1 class="main-title">Timer</h1>
-      <input type="text" id="datetime-picker" />
-      <button type="button" data-start disabled>Start</button>
+    <main class="block-timer">
+      <div class="container timer-container">
+        <section class="timer-box">
+          <a class="back-link" href="./index.html">Go back</a>
+          <h1 class="main-title">Timer</h1>
+          <div class="timer-input">
+            <input type="text" id="datetime-picker" class="timer-inpt" />
 
-      <div class="timer">
-        <div class="field">
-          <span class="value" data-days>00</span>
-          <span class="label">Days</span>
-        </div>
-        <div class="field">
-          <span class="value" data-hours>00</span>
-          <span class="label">Hours</span>
-        </div>
-        <div class="field">
-          <span class="value" data-minutes>00</span>
-          <span class="label">Minutes</span>
-        </div>
-        <div class="field">
-          <span class="value" data-seconds>00</span>
-          <span class="label">Seconds</span>
-        </div>
+            <button type="button" class="timer-btn" disabled>Start</button>
+          </div>
+
+          <div class="timer">
+            <div class="field">
+              <span class="value" data-days>00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="field">
+              <span class="value" data-hours>00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="field">
+              <span class="value" data-minutes>00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+              <span class="value" data-seconds>00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/izitoast"></script>
     <script type="module" src="./js/1-timer.js"></script>
