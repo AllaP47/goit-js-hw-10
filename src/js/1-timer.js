@@ -30,6 +30,7 @@ const options = {
     },
 };
 
+
 flatpickr(datetimePicker, options);
 
 function convertMs(ms) {
@@ -73,3 +74,4 @@ function startTimer() {
 }
 
 startButton.addEventListener("click", startTimer);
+
