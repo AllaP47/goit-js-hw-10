@@ -30,16 +30,18 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+.main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
 .block-timer {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: 100%;
 }
-.timer-container {
-  max-width: 1440px;
-  max-height: 496px;
-}
+
 .timer-box {
   display: flex;
   flex-direction: column;
@@ -50,13 +52,15 @@ main:has(.back-link) {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+
   gap: 8px;
   padding-top: 24px;
-  min-width: 355px;
-  max-height: 40px;
 }
-.text {
+
+.timer-inpt {
+  width: 260px;
+  height: 35px;
+  border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -64,10 +68,7 @@ main:has(.back-link) {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-input {
-  min-width: 272px;
-  min-height: 40px;
-}
+
 .timer-btn {
   display: flex;
   align-items: center;
@@ -80,13 +81,32 @@ input {
   width: 75px;
   height: 40px;
 
-  background: #cfcfcf;
-}
-.button :hover .button :active {
   background-color: #4e75ff;
+
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.timer-btn:hover {
+  background-color: #6c8cff;
+}
+
+.timer-btn:disabled {
+  background: #cfcfcf;
+
+  opacity: 0.6;
+}
+
 .timer {
+  width: 346px;
+  height: 72px;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 24px;
   gap: 10px;
   margin-top: 20px;
 }
