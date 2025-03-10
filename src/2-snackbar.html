@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Підключаємо бібліотеку iziToast -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+    />
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Snackbar</h1>
-        <form class="form">
-          <label>
-            Delay (ms)
-            <input type="number" name="delay" required />
-          </label>
-          <fieldset>
-            <legend>State</legend>
-            <label>
-              <input type="radio" name="state" value="fulfilled" required />
-              Fulfilled
-            </label>
-            <label>
-              <input type="radio" name="state" value="rejected" required />
-              Rejected
-            </label>
-          </fieldset>
-          <button type="submit">Create notification</button>
-        </form>
       </div>
+      <form class="form">
+        <label class="label-delay">
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn">Create notification</button>
+      </form>
     </main>
+
     <script type="module" src="./js/2-snackbar.js"></script>
+    <!-- Підключаємо бібліотеку iziToast -->
+    <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
   </body>
 </html>
