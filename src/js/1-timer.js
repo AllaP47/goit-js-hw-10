@@ -4,7 +4,7 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 const datetimePicker = document.querySelector("#datetime-picker");
-const startButton = document.querySelector(".timer-btn"); // Виправлено
+const startButton = document.querySelector("[data-start]");
 const daysEl = document.querySelector("[data-days]");
 const hoursEl = document.querySelector("[data-hours]");
 const minutesEl = document.querySelector("[data-minutes]");
@@ -31,7 +31,7 @@ const options = {
 };
 
 flatpickr(datetimePicker, options);
-startButton.disabled = true; // Робимо кнопку неактивною при старті
+startButton.disabled = true; 
 
 startButton.addEventListener("click", () => {
   startButton.disabled = true;
